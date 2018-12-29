@@ -8,10 +8,10 @@ import {
   MatCardModule,
   MatFormFieldModule,
   MatInputModule,
-  MatStepperModule
+  MatStepperModule,
+  MatDialogModule,
+  MatGridListModule
 } from '@angular/material';
-
-import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   imports: [
@@ -23,7 +23,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatFormFieldModule,
     MatInputModule,
     MatGridListModule,
-    MatStepperModule
+    MatStepperModule,
+    MatDialogModule
   ],
   exports: [
     MatButtonModule,
@@ -34,7 +35,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatFormFieldModule,
     MatInputModule,
     MatGridListModule,
-    MatStepperModule
+    MatStepperModule,
+    MatDialogModule
   ]
 })
 export class MaterialModule { }
