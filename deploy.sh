@@ -9,4 +9,4 @@ mkdir "$DIST_DIR" && cp -R dist/*/* "$DIST_DIR" && cp CNAME.knowbyself "$DIST_DI
 
 cd -
 rm -rf "$FIREBASE/public/*"
-cp legacy_html/* "$FIREBASE/public" && cp -R dist/*/* "$FIREBASE/public" && cd "$FIREBASE" && firebase deploy
+cp -f legacy_html/* "$FIREBASE/public" ; cp -R dist/*/* "$FIREBASE/public" && cd "$FIREBASE" && firebase deploy
