@@ -12,10 +12,10 @@ import { MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { AngularFirestoreComponent } from './angular-firestore/angular-firestore.component';
 
 import { environment } from '../environments/environment';
 import { LoginDialogComponent } from './login-dialog/login-dialog.component';
+import { JavInsertComponent } from './jav-insert/jav-insert.component';
 
 const firebaseUiAuthConfig: firebaseui.auth.Config = {
   signInFlow: 'popup',
@@ -51,8 +51,8 @@ const firebaseUiAuthConfig: firebaseui.auth.Config = {
   declarations: [
     AppComponent,
     HomeComponent,
-    AngularFirestoreComponent,
-    LoginDialogComponent
+    LoginDialogComponent,
+    JavInsertComponent
   ],
   entryComponents: [
     LoginDialogComponent

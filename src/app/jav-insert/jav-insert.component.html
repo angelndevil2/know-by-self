@@ -1,0 +1,28 @@
+
+<form>
+
+  <div>
+    <mat-form-field>
+      <input matInput placeholder="Code" #code>
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <input matInput placeholder="Title" #title>
+    </mat-form-field>
+  </div>
+
+    <div>
+      <mat-form-field>
+        <input matInput placeholder="Description" #desc>
+      </mat-form-field>
+    </div>
+
+</form>
+
+<div>
+  <button mat-button (click)="insert(code.value, title.value, desc.value);">
+    <mat-icon>input</mat-icon>
+  </button>
+</div>

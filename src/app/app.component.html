@@ -6,6 +6,7 @@
   <!-- This fills the remaining space of the current row -->
   <span class="fill-remaining-space"></span>
   <div *ngIf="afAuth.user | async as user; else showLogin">
+    <a *ngIf="loginService.isAdmin()" mat-button [routerLink]="['/av-register']">av</a>
     {{ user.displayName }} <button color="accent" mat-button (click)="logout()">Log out</button>
   </div>
   <ng-template #showLogin>

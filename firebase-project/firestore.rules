@@ -2,7 +2,12 @@ service cloud.firestore {
     match /databases/{database}/documents {
 
     match /avs/{av} {
-      allow read, write: if request.auth.uid == '47ENPvy4xEREbucjD1DSeCgLVaz2';
+
+      allow read, delete: if request.auth.uid == '47ENPvy4xEREbucjD1DSeCgLVaz2';
+
+      allow update: if request.auth.uid == '47ENPvy4xEREbucjD1DSeCgLVaz2' && exists(/databases/$(database)/documents/avs/$(request.resource.id));
+
+      allow create: if request.auth.uid == '47ENPvy4xEREbucjD1DSeCgLVaz2';
     }
 
     match /movies/{movie} {

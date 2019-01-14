@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { MatDialog, MatDialogRef } from '@angular/material';
 import { LoginDialogComponent } from './login-dialog/login-dialog.component';
+import { LoginService } from './login.service';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,7 @@ export class AppComponent {
   title = 'Know by Self';
   private loginDialogRef: MatDialogRef<LoginDialogComponent>;
 
-  constructor(private loginDialog: MatDialog, public afAuth: AngularFireAuth) {
+  constructor(private loginDialog: MatDialog, public afAuth: AngularFireAuth, public loginService: LoginService) {
   }
 
   login() {
