@@ -16,6 +16,9 @@ import { HomeComponent } from './home/home.component';
 import { environment } from '../environments/environment';
 import { LoginDialogComponent } from './login-dialog/login-dialog.component';
 import { JavInsertComponent } from './jav-insert/jav-insert.component';
+import { GradientDiscentComponent } from './machine-learning/gradient-discent/gradient-discent.component';
+import { IndexComponent } from './machine-learning/index/index.component';
+import { MachineLearningHomeComponent } from './machine-learning/machine-learning-home/machine-learning-home.component';
 
 const firebaseUiAuthConfig: firebaseui.auth.Config = {
   signInFlow: 'popup',
@@ -52,7 +55,10 @@ const firebaseUiAuthConfig: firebaseui.auth.Config = {
     AppComponent,
     HomeComponent,
     LoginDialogComponent,
-    JavInsertComponent
+    JavInsertComponent,
+    GradientDiscentComponent,
+    IndexComponent,
+    MachineLearningHomeComponent
   ],
   entryComponents: [
     LoginDialogComponent
