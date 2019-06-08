@@ -1,0 +1,181 @@
+<body class="c12">
+    <p class="c9"><span class="c1 c3">The learning process:</span></p>
+    <ul class="c7 lst-kix_jfmtkqxcj9h7-0 start">
+        <li class="c6"><span>F</span><span class="c1 c2">it a probability distribution to each class, individually</span></li>
+    </ul>
+    <p class="c5"><span class="c1 c2"></span></p>
+    <p class="c5"><span class="c1 c2"></span></p>
+    <p class="c9"><span class="c1 c3">To classify a new point:</span></p>
+    <ul class="c7 lst-kix_lhwowpvm7fxy-0 start">
+        <li class="c6"><span class="c1 c2">Which of these distributions was it most likely to have come from?</span></li>
+    </ul>
+    <p class="c5"><span class="c1 c2"></span></p>
+    <p class="c5"><span class="c1 c2"></span></p>
+    <p class="c5"><span class="c1 c2"></span></p>
+    <p class="c9"><span class="c1 c3">For each class j, we have:</span></p>
+    <ul class="c7 lst-kix_521bpappzbyj-0 start">
+        <li class="c6"><span>the probability of that class, </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 126.67px; height: 21.33px;"><img
+                    alt="" src="assets/images/generative-approach-to-classification/image25.png" style="width: 126.67px; height: 21.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title=""></span></li>
+        <li class="c6"><span>the distribution of data in that class, </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 46.67px; height: 21.33px;"><img
+                    alt="" src="assets/images/generative-approach-to-classification/image5.png" style="width: 46.67px; height: 21.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title=""></span></li>
+    </ul>
+    <ul class="c7 lst-kix_521bpappzbyj-1 start">
+        <li class="c9 c14"><span class="c1 c2">uni-, bi-, multivariate Gaussian</span></li>
+    </ul>
+    <p class="c5"><span class="c1 c2"></span></p>
+    <p class="c5"><span class="c1 c2"></span></p>
+    <p class="c9"><span class="c1 c3">Overall joint distribution:</span></p>
+    <p class="c5"><span class="c1 c3"></span></p>
+    <p class="c8 c13"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 309.33px; height: 22.67px;"><img
+                alt="" src="assets/images/generative-approach-to-classification/image24.png" style="width: 309.33px; height: 22.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c5"><span class="c1 c2"></span></p>
+    <p class="c5"><span class="c1 c2"></span></p>
+    <p class="c9"><span class="c1 c3">To classify a new x:</span></p>
+    <ul class="c7 lst-kix_nazsoo87hbtf-0 start">
+        <li class="c6"><span class="c10">pick the label y with largest </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 60.00px; height: 20.00px;"><img
+                    alt="" src="assets/images/generative-approach-to-classification/image31.png" style="width: 60.00px; height: 20.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title=""></span></li>
+    </ul>
+    <p class="c5"><span class="c1 c2"></span></p>
+    <p class="c5"><span class="c1 c2"></span></p>
+    <p class="c5"><span class="c1 c2"></span></p>
+    <p class="c9"><span class="c1 c3">One-dimensional generative modeling with the univariate Gaussian</span></p>
+    <p class="c5"><span class="c1 c3"></span></p>
+    <p class="c9"><span class="c4">Distributions </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 45.33px; height: 21.33px;"><img
+                alt="" src="assets/images/generative-approach-to-classification/image26.png" style="width: 45.33px; height: 21.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span><span class="c1 c4">&nbsp;:</span></p>
+    <ul class="c7 lst-kix_wf5mrzy5a5n5-0 start">
+        <li class="c6"><span class="c1 c2">use the univariate Gaussian</span></li>
+        <li class="c6"><span>The Gaussian </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 56.00px; height: 17.33px;"><img
+                    alt="" src="assets/images/generative-approach-to-classification/image36.png" style="width: 56.00px; height: 17.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title=""></span><span>&nbsp;has mean </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 8.00px; height: 10.67px;"><img
+                    alt="" src="assets/images/generative-approach-to-classification/image8.png" style="width: 8.00px; height: 10.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title=""></span><span>, variance </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 13.33px; height: 13.33px;"><img
+                    alt="" src="assets/images/generative-approach-to-classification/image28.png" style="width: 13.33px; height: 13.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title=""></span><span class="c1 c2">, and probability density function</span></li>
+    </ul>
+    <p class="c5"><span class="c0 c1"></span></p>
+    <p class="c8"><span class="c0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 308.00px; height: 50.67px;"><img
+                alt="" src="assets/images/generative-approach-to-classification/image10.png" style="width: 308.00px; height: 50.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c5"><span class="c1 c3"></span></p>
+    <p class="c5"><span class="c1 c3"></span></p>
+    <p class="c9"><span class="c1 c3">Two-dimensional generative modeling with the bivariate Gaussian</span></p>
+    <p class="c5"><span class="c1 c3"></span></p>
+    <p class="c9"><span>Suppose </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 17.33px; height: 13.33px;"><img
+                alt="" src="assets/images/generative-approach-to-classification/image15.png" style="width: 17.33px; height: 13.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span><span>&nbsp;has mean </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 13.33px; height: 10.67px;"><img
+                alt="" src="assets/images/generative-approach-to-classification/image18.png" style="width: 13.33px; height: 10.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span><span>&nbsp;and </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 18.67px; height: 13.33px;"><img
+                alt="" src="assets/images/generative-approach-to-classification/image7.png" style="width: 18.67px; height: 13.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span><span>&nbsp;has mean </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 14.67px; height: 10.67px;"><img
+                alt="" src="assets/images/generative-approach-to-classification/image20.png" style="width: 14.67px; height: 10.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span><span class="c1 c2">.</span></p>
+    <p class="c5"><span class="c1 c2"></span></p>
+    <p class="c9"><span class="c1 c4">Dependence between them by their covariance:</span></p>
+    <p class="c5"><span class="c1 c2"></span></p>
+    <p class="c8"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 504.00px; height: 20.00px;"><img
+                alt="" src="assets/images/generative-approach-to-classification/image19.png" style="width: 504.00px; height: 20.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c5"><span class="c1 c2"></span></p>
+    <ul class="c7 lst-kix_8pgq41jboscg-0 start">
+        <li class="c6"><span>Maximized when </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 60.00px; height: 13.33px;"><img
+                    alt="" src="assets/images/generative-approach-to-classification/image23.png" style="width: 60.00px; height: 13.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title=""></span><span>&nbsp;, in which case it is </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 56.00px; height: 16.00px;"><img
+                    alt="" src="assets/images/generative-approach-to-classification/image32.png" style="width: 56.00px; height: 16.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title=""></span><span class="c1 c2">.</span></li>
+        <li class="c6"><span>It is at most </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 108.00px; height: 16.00px;"><img
+                    alt="" src="assets/images/generative-approach-to-classification/image27.png" style="width: 108.00px; height: 16.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title=""></span><span class="c1 c2">.</span></li>
+    </ul>
+    <p class="c5"><span class="c1 c2"></span></p>
+    <p class="c5"><span class="c1 c2"></span></p>
+    <p class="c9"><span class="c1 c4">The bivariate (2-d) Gaussian</span></p>
+    <p class="c5"><span class="c1 c4"></span></p>
+    <p class="c9"><span>A distribution over </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 85.33px; height: 17.33px;"><img
+                alt="" src="assets/images/generative-approach-to-classification/image35.png" style="width: 85.33px; height: 17.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span><span class="c1 c2">, parameterized by</span></p>
+    <ul class="c7 lst-kix_ns6pi3cf3lv6-0 start">
+        <li class="c6"><span>Mean </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 86.67px; height: 17.33px;"><img
+                    alt="" src="assets/images/generative-approach-to-classification/image30.png" style="width: 86.67px; height: 17.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title=""></span><span>, where </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 81.33px; height: 16.00px;"><img
+                    alt="" src="assets/images/generative-approach-to-classification/image34.png" style="width: 81.33px; height: 16.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title=""></span><span>&nbsp;and </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 81.33px; height: 16.00px;"><img
+                    alt="" src="assets/images/generative-approach-to-classification/image6.png" style="width: 81.33px; height: 16.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title=""></span></li>
+        <li class="c6"><span>Covariance matrix </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 113.33px; height: 38.67px;"><img
+                    alt="" src="assets/images/generative-approach-to-classification/image21.png" style="width: 113.33px; height: 38.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title=""></span><span>, where </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 192.00px; height: 58.67px;"><img
+                    alt="" src="assets/images/generative-approach-to-classification/image3.png" style="width: 192.00px; height: 58.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title=""></span></li>
+        <li class="c6"><span class="c1 c2">Probability density is highest at the mean, falls off in ellipsoidal contours.</span></li>
+    </ul>
+    <p class="c5"><span class="c1 c2"></span></p>
+    <p class="c5"><span class="c1 c2"></span></p>
+    <p class="c9"><span class="c1 c4">Probability density of the bivariate Gaussian</span></p>
+    <p class="c5"><span class="c1 c4"></span></p>
+    <p class="c8"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 544.00px; height: 66.67px;"><img
+                alt="" src="assets/images/generative-approach-to-classification/image29.png" style="width: 544.00px; height: 66.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c8 c11"><span class="c1 c3"></span></p>
+    <p class="c5"><span class="c1 c3"></span></p>
+    <p class="c5"><span class="c1 c3"></span></p>
+    <p class="c9"><span class="c1 c3">Multi-dimensional generative modeling with the multivariate Gaussian</span></p>
+    <p class="c5"><span class="c1 c2"></span></p>
+    <p class="c9"><span class="c1 c4">The multivariate Gaussian</span></p>
+    <p class="c5"><span class="c1 c2"></span></p>
+    <p class="c9"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 56.00px; height: 16.00px;"><img
+                alt="" src="assets/images/generative-approach-to-classification/image9.png" style="width: 56.00px; height: 16.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span><span>&nbsp;: Gaussian in </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 17.33px; height: 14.67px;"><img
+                alt="" src="assets/images/generative-approach-to-classification/image11.png" style="width: 17.33px; height: 14.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <ul class="c7 lst-kix_slrhrpxvm8dt-0 start">
+        <li class="c6"><span>mean : </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 48.00px; height: 17.33px;"><img
+                    alt="" src="assets/images/generative-approach-to-classification/image22.png" style="width: 48.00px; height: 17.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title=""></span></li>
+        <li class="c6"><span>covariance: </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 34.67px; height: 10.67px;"><img
+                    alt="" src="assets/images/generative-approach-to-classification/image12.png" style="width: 34.67px; height: 10.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title=""></span><span>&nbsp;matrix </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 9.33px; height: 10.67px;"><img
+                    alt="" src="assets/images/generative-approach-to-classification/image2.png" style="width: 9.33px; height: 10.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title=""></span></li>
+        <li class="c6"><span>generates points </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 145.33px; height: 16.00px;"><img
+                    alt="" src="assets/images/generative-approach-to-classification/image4.png" style="width: 145.33px; height: 16.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title=""></span></li>
+        <li class="c6"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 10.67px; height: 10.67px;"><img
+                    alt="" src="assets/images/generative-approach-to-classification/image14.png" style="width: 10.67px; height: 10.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title=""></span><span class="c1 c2">&nbsp;is the vector of coordinate-wise means:</span></li>
+    </ul>
+    <p class="c9 c15"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 245.33px; height: 16.00px;"><img
+                alt="" src="assets/images/generative-approach-to-classification/image17.png" style="width: 245.33px; height: 16.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <ul class="c7 lst-kix_e1x2xnfpt99f-0 start">
+        <li class="c6"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 9.33px; height: 10.67px;"><img
+                    alt="" src="assets/images/generative-approach-to-classification/image2.png" style="width: 9.33px; height: 10.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title=""></span><span class="c1 c2">&nbsp;is a matrix containing all pairwise covariances:</span></li>
+    </ul>
+    <p class="c9 c15"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 164.00px; height: 16.00px;"><img
+                alt="" src="assets/images/generative-approach-to-classification/image16.png" style="width: 164.00px; height: 16.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span><span>&nbsp;if </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 32.00px; height: 14.67px;"><img
+                alt="" src="assets/images/generative-approach-to-classification/image33.png" style="width: 32.00px; height: 14.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c9 c15"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 96.00px; height: 16.00px;"><img
+                alt="" src="assets/images/generative-approach-to-classification/image13.png" style="width: 96.00px; height: 16.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c5 c15"><span class="c1 c2"></span></p>
+    <p class="c5"><span class="c1 c4"></span></p>
+    <p class="c9"><span class="c1 c4">Probability density</span></p>
+    <p class="c5"><span class="c1 c4"></span></p>
+    <p class="c8"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 494.67px; height: 57.33px;"><img
+                alt="" src="assets/images/generative-approach-to-classification/image1.png" style="width: 494.67px; height: 57.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c5"><span class="c1 c4"></span></p>
+
+    <mat-divider></mat-divider>
+    <p class="c5"><span class="c1 c2"></span></p>
+    Reference : <a href="https://courses.edx.org/courses/course-v1:UCSanDiegoX+DSE220x+1T2019">UCSanDiegoX: DSE220x Machine Learning Fundamentals</a>
+    <p class="c5"><span class="c1 c2"></span></p>
+
+</body>

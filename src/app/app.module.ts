@@ -8,7 +8,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { FirebaseUIModule, firebase, firebaseui } from 'firebaseui-angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material';
+import { MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/dialog';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -18,6 +18,8 @@ import { LoginDialogComponent } from './login-dialog/login-dialog.component';
 import { JavInsertComponent } from './jav-insert/jav-insert.component';
 import { MachineLearningHomeComponent } from './machine-learning/machine-learning-home/machine-learning-home.component';
 import { DataScienceHomeComponent } from './data-science/data-science-home/data-science-home.component';
+// tslint:disable-next-line:max-line-length
+import { GenerativeApproachToClassificationComponent } from './machine-learning/generative-approach-to-classification/generative-approach-to-classification.component';
 
 const firebaseUiAuthConfig: firebaseui.auth.Config = {
   signInFlow: 'popup',
@@ -56,7 +58,8 @@ const firebaseUiAuthConfig: firebaseui.auth.Config = {
     LoginDialogComponent,
     JavInsertComponent,
     MachineLearningHomeComponent,
-    DataScienceHomeComponent
+    DataScienceHomeComponent,
+    GenerativeApproachToClassificationComponent
   ],
   entryComponents: [
     LoginDialogComponent

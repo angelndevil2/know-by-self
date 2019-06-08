@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 
-import {
-  MatButtonModule,
-  MatMenuModule,
-  MatToolbarModule,
-  MatIconModule,
-  MatCardModule,
-  MatFormFieldModule,
-  MatInputModule,
-  MatStepperModule,
-  MatDialogModule,
-  MatGridListModule
-} from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   imports: [
@@ -24,7 +23,8 @@ import {
     MatInputModule,
     MatGridListModule,
     MatStepperModule,
-    MatDialogModule
+    MatDialogModule,
+    MatDividerModule
   ],
   exports: [
     MatButtonModule,
@@ -36,7 +36,8 @@ import {
     MatInputModule,
     MatGridListModule,
     MatStepperModule,
-    MatDialogModule
+    MatDialogModule,
+    MatDividerModule
   ]
 })
 export class MaterialModule { }
