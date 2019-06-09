@@ -51,3 +51,4 @@ public/
 
 # key protect
 environments/
+package-lock.json
